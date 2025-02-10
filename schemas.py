@@ -84,3 +84,6 @@ class Skill(SkillBase):
 
     class Config:
         from_attributes = True
+
+class SkillRead(BaseModel):
+    id: int
