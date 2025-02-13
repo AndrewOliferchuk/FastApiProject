@@ -2,8 +2,7 @@ from sqlalchemy import create_engine
 
 from sqlalchemy.orm import sessionmaker, declarative_base, Session
 
-import schemas
-from crud import create_user
+
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"
 
