@@ -1,5 +1,5 @@
 from typing import List, Optional
-from sqlalchemy import ForeignKey, String, Integer, Boolean
+from sqlalchemy import ForeignKey, String, Integer
 from sqlalchemy.orm import  mapped_column, Mapped, relationship, declarative_base
 
 Base = declarative_base()

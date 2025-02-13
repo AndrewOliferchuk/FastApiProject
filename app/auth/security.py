@@ -1,13 +1,17 @@
 import re
 from datetime import datetime, timedelta
-from jose import JWTError, jwt
+from jose import jwt
 from passlib.context import CryptContext
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 
-from db.engine import get_db
-from schemas import UserRead
-from crud import get_user_by_email
+from app.api.users.crud import get_user_by_email
+from app.api.users.schemas import UserRead
+
+
+from app.db.engine import get_db
+
+
 from sqlalchemy.orm import Session
 
 SECRET_KEY = "SECRET_KEY"
